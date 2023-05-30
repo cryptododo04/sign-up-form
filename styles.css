@@ -121,6 +121,7 @@ input{
         background-repeat: no-repeat;
         background-size:cover;
         max-height: 40vh;
+        padding-left: 0px;
     
     }
 

@@ -24,7 +24,7 @@ body{
 #img-container {
     min-width: 850px;
     height: 99.4vh;
-    background-image: url(/resources/images/5927911.gif);
+    background-image:url('./resources/images/5927911.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@font-face {
+    font-family: glitch;
+    src: url(resources/fonts/GlitchGoblin.ttf);
+}
+
+.main-container{
+    display: flex;
+    margin-top: 40px;
+}
+
+#img-container{
+    max-width: 750px;
+    max-height: 570px;
+    
+}
+
+#img-container img{
+    height: 570px;
+    width: 100%;
+}
+

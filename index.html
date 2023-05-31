@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 
     <title>CryptoDodo04 sign up form TOR</title>
@@ -23,64 +27,69 @@
             </div>
 
         <div id="form-container">
-            <h3>This is not a real online service! You know you need something like This
-                in your life to help you realize your deepest dreams.
-            </h3>
-            <h3>Sign up now to get started.</h3>
+
+            <div id="header-text">
+                <h3>This is not a real online service! You know you need something like This
+                    in your life to help you realize your deepest dreams.
+                </h3>
+                <h3>Sign up now to get started.</h3>
+
+                <br>
+                <h3>You know you want to.</h3>
+            </div>
 
             <br>
-            <br>
-            <h3>You know you want to.</h3>
-            <br>
 
-            <h3>Let's, do this!</h3>
-            <br>
+            <div id="form-main-div">
+                <form action="#">
 
-            <form action="#">
+                    <h3>Let's, do this!</h3>
+                    <br>
+                        <div class="form">
+                            
 
-                    <div class="form">
+                            <div class="input">
+                                <label for="first-name">First name (*)</label>
+                                <input type="text" name="firstName" id="first-name">
+                            </div>
 
-                        <div class="input">
-                            <label for="first-name">First name (*)</label>
-                            <input type="text" name="firstName" id="first-name">
-                        </div>
+                            <div class="input">
+                                <label for="last-name">Last name (*)</label>
+                                <input type="text" name="lastName" id="last-name">
+                            </div>
 
-                        <div class="input">
-                            <label for="last-name">Last name (*)</label>
-                            <input type="text" name="lastName" id="last-name">
-                        </div>
+                            <div class="input">
+                                <label for="email">Email (*)</label>
+                                <input type="email" name="email" id="email">
+                            </div>
 
-                        <div class="input">
-                            <label for="email">Email (*)</label>
-                            <input type="email" name="email" id="email">
-                        </div>
+                            <div class="input">
+                                <label for="phone">Phone number</label>
+                                <input type="text" name="phone" id="phone">
+                            </div>
 
-                        <div class="input">
-                            <label for="phone">Phone number</label>
-                            <input type="text" name="phone" id="phone">
-                        </div>
+                            <div class="input">
+                                <label for="password">Password (*)</label>
+                                <input type="password" name="password" id="password">
+                            </div>
 
-                        <div class="input">
-                            <label for="password">Password (*)</label>
-                            <input type="password" name="password" id="password">
-                        </div>
+                            <div class="input">
+                                <label for="confirm-password">confirm password (*)</label>
+                                <input type="password" name="confirm-password" id="confirm-password">
+                            </div>
 
-                        <div class="input">
-                            <label for="confirm-password">confirm password (*)</label>
-                            <input type="password" name="confirm-password" id="confirm-password">
-                        </div>
+                    </div>
 
-                </div>
+                    <button type="submit" class="submitBtn">Create account</button>
 
-                <button type="submit" class="submitBtn">Create account</button>
+                </form>
 
-            </form>
+            </div>
 
-
-    <div id="log-in" class="login">
-        <p>Already have an account?</p>
-        <a href="#">Log in</a>
-    </div>
+            <div id="log-in" class="login">
+                <p>Already have an account?</p>
+                <a href="#">Log in</a>
+            </div>
         </div>
 
 

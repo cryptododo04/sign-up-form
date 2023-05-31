@@ -121,6 +121,8 @@ input:focus{
     margin-left: 14px;
     padding: 8px 20px;
 
+    cursor: pointer;
+
     box-sizing: border-box;
 
     font-family: 'Poppins', sans-serif;
@@ -160,9 +162,23 @@ input:focus{
 
 .login{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     margin-top: 18px;
     padding-left: 15px;
+}
+
+.login p{
+    color: rgb(235, 235, 235);
+    font-size: 1rem;
+}
+
+.login a {
+    text-decoration: none;
+    
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(255, 0, 191);
+    
 }
 
 

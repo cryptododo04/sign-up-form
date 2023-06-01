@@ -356,7 +356,7 @@ input:focus{
     }
 
     #header-text{
-        padding-left: 0px;
+        padding: 0px 10px;
     }
 
     #form-main-div{

@@ -356,4 +356,50 @@ input:focus{
 }
 
 
+      /* The typewriter cursor effect */
+      @keyframes cursor {
+        0% { opacity: 1; }
+          49% { opacity: 1; }
+          50% { opacity: 0; }
+          100% { opacity: 0; }
+      }
+      @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+      @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
   
+
+      @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+      @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+        *{
+          margin: 0;
+        }
+  
+        .typewriter {
+          font-family: 'Anonymous Pro', monospace;
+          width: 70%;  
+        }
+        .type {
+          overflow: hidden;
+          margin: 0 auto;
+          display: inline-block;
+              font-weight: normal;
+              color: white;
+      
+        }
+        .type:after{
+         content: '';
+          display: inline-block;
+          background-color: white;
+          margin-left: 2px;
+          height: 15px;
+          width: 4px;
+          animation: cursor 0.4s infinite;
+        }
+      
+        /* The typewriter cursor effect */
+        @keyframes cursor {
+          0% { opacity: 1; }
+            49% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 0; }
+        }

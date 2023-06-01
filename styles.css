@@ -103,8 +103,9 @@ label{
     display: flex;
     flex-direction: column;
     width: 45%;
-    touch-action: manipulation;
+    
 }
+
 
 input{
     height: 25px;
@@ -115,6 +116,8 @@ input{
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
+
+    touch-action:manipulation;
 }
 
 input:focus{

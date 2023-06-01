@@ -310,6 +310,7 @@ input:focus{
 
     #form-main-div{
         border-radius: 6px;
+        background-color: rgb(10, 10,10);
     }
 
     form h3{

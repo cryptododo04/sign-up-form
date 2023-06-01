@@ -1,3 +1,49 @@
+const firstNameInput = document.getElementById('first-name');
+const lastNameInput = document.getElementById('last-name');
+const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
+const passwordInput = document.getElementById('password');
+const confirmPasswordInput = document.getElementById('confirm-password');
+
+
+firstNameInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault(); // Evita el comportamiento predeterminado (recargar la página)
+      lastNameInput.focus(); // Enfoca el siguiente campo de entrada
+    }
+  });
+
+  lastNameInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      emailInput.focus();
+    }
+  });
+
+  emailInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      phoneInput.focus();
+    }
+
+    phoneInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+          event.preventDefault();
+          passwordInput.focus();
+        }
+      });
+    
+      passwordInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+          event.preventDefault();
+          confirmPasswordInput.focus();
+        }
+      });
+    
+
+  });
+
+
 document.addEventListener("DOMContentLoaded", function() {
     var i = 0;
     var tag = document.getElementById("typeWritter");
@@ -13,5 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(typeWriter, speed);
         }
     }
+
+    
     typeWriter();
 });

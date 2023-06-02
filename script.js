@@ -55,39 +55,44 @@ submitButton.addEventListener('click', function(event) {
 });
 
 function validateForm() {
-    // Check for empty required inputs and display default error messages
     const inputs = [firstNameInput, lastNameInput, emailInput, phoneInput, passwordInput, confirmPasswordInput];
-    let isValid = true;
-
+    let firstInvalidInput = null;
+  
     for (let i = 0; i < inputs.length; i++) {
-        const input = inputs[i];
-        if (input.checkValidity() === false) {
-            input.reportValidity();
-            isValid = false;
-            break; // Stop the loop on the first invalid input
+      const input = inputs[i];
+      if (input.checkValidity() === false) {
+        input.classList.add('invalid-input');
+        if (!firstInvalidInput) {
+          firstInvalidInput = input;
         }
+      } else {
+        input.classList.remove('invalid-input');
+      }
     }
-
-    if (!isValid) {
-        return; // Stop form submission
+  
+    if (firstInvalidInput) {
+      firstInvalidInput.reportValidity(); // Display browser's default error alert for the first invalid input
+      firstInvalidInput.focus(); // Set focus on the first invalid input
+      return; // Stop form submission
     }
-
+  
     const password = passwordInput.value.trim();
     const confirmPassword = confirmPasswordInput.value.trim();
-
+  
     // Perform password validation
     if (password !== confirmPassword) {
-        passwordError.textContent = "Passwords do not match";
-        passwordError.classList.add('error-animation');
-        setTimeout(function() {
-            passwordError.classList.remove('error-animation');
-        }, 1000);
-        return; // Stop form submission
+      passwordError.textContent = "Passwords do not match";
+      passwordError.classList.add('error-animation');
+      setTimeout(function () {
+        passwordError.classList.remove('error-animation');
+      }, 1000);
+      return; // Stop form submission
     }
-
+  
     // If all inputs are valid, proceed with form submission
     submitForm();
-}
+  }
+  
 
 function submitForm() {
     // Perform form submission logic here

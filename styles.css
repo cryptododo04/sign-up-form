@@ -201,7 +201,14 @@ input:focus{
     animation-iteration-count: 2;
 }
 
-
+input:invalid {
+    /* Define the default style for invalid inputs (without the red border) */
+  }
+  
+  input.invalid-input:invalid {
+    border: 2px solid red;
+    /* Add the red border only for inputs with the 'invalid-input' class */
+  }
 
 @keyframes pulse {
     0% { transform: scale(1); }

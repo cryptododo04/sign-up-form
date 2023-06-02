@@ -91,8 +91,7 @@ function validateForm() {
 
 function submitForm() {
     // Perform form submission logic here
-    // You can send the form data to a server or perform any other action
-    // For demonstration purposes, we'll log the form data to the console
+
     console.log("Form submitted successfully!");
     console.log("First Name:", firstNameInput.value);
     console.log("Last Name:", lastNameInput.value);
@@ -103,7 +102,7 @@ function submitForm() {
 
 
    document.getElementById("form").submit();
-  // Replace "your-form-id" with the actual ID of your form element
+
 }
 
 document.addEventListener("DOMContentLoaded", function() {

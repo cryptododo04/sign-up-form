@@ -101,14 +101,9 @@ function submitForm() {
     console.log("Password:", passwordInput.value);
     console.log("Confirm Password:", confirmPasswordInput.value);
 
-    // Reset the form (optional)
-    firstNameInput.value = "";
-    lastNameInput.value = "";
-    emailInput.value = "";
-    phoneInput.value = "";
-    passwordInput.value = "";
-    confirmPasswordInput.value = "";
-    passwordError.textContent = "";
+
+   document.getElementById("form").submit();
+  // Replace "your-form-id" with the actual ID of your form element
 }
 
 document.addEventListener("DOMContentLoaded", function() {

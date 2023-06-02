@@ -190,6 +190,16 @@ input:focus{
     
 }
 
+@media screen and (min-width: 1200px){
+
+    #img-container{
+        min-width: 70vw;
+        min-height: 98vh;
+
+    }
+
+}
+    
 
 @media screen and (max-width: 1045px) {
     #img-container {
